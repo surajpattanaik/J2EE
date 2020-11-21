@@ -1,0 +1,61 @@
+<web-app>
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>html</servlet-name>
+	<servlet-class>com.skp.servlet.HtmlServlet</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>html</servlet-name>
+	 <url-pattern>/htmlformat</url-pattern>
+</servlet-mapping>
+
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>plain</servlet-name>
+	<servlet-class>com.skp.servlet.PlainServlet</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>plain</servlet-name>
+	 <url-pattern>/plainformat</url-pattern>
+</servlet-mapping>
+
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>word</servlet-name>
+	<servlet-class>com.skp.servlet.WordServlet</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>word</servlet-name>
+	 <url-pattern>/wordformat</url-pattern>
+</servlet-mapping>
+
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>excel</servlet-name>
+	<servlet-class>com.skp.servlet.ExcelServlet</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>excel</servlet-name>
+	 <url-pattern>/Excelformat</url-pattern>
+</servlet-mapping>
+
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>xml</servlet-name>
+	<servlet-class>com.skp.servlet.XMLServlet</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>xml</servlet-name>
+	 <url-pattern>/xmlformat</url-pattern>
+</servlet-mapping>
+</web-app>

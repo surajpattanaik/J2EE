@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+<servlet-name>capital</servlet-name>
+<servlet-class>com.nt.servlet.FindCapitalServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>capital</servlet-name>
+<url-pattern>/countryurl</url-pattern>
+</servlet-mapping>
+</web-app>

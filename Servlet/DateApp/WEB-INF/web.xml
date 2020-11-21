@@ -1,0 +1,13 @@
+<web-app>
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>date</servlet-name>
+	<servlet-class>com.skp.servlet.DateApp</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>date</servlet-name>
+	 <url-pattern>/first</url-pattern>
+</servlet-mapping>
+</web-app>

@@ -1,0 +1,13 @@
+<web-app>
+<!--Servlet configuration-->
+<servlet>
+    <servlet-name>vote</servlet-name>
+	<servlet-class>com.skp.servlet.CheckVotingEligibilityCheckVotingEligibility</servlet-class>
+</servlet>
+
+<!--Servlet mapping-->
+<servlet-mapping>
+     <servlet-name>vote</servlet-name>
+	 <url-pattern>/voteurl</url-pattern>
+</servlet-mapping>
+</web-app>

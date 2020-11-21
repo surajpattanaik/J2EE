@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<servlet>
+     <servlet-name>process</servlet-name>
+     <servlet-class>com.nt.servlet.ProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>process</servlet-name>
+     <url-pattern>/processurl</url-pattern>
+  </servlet-mapping>
+
+</web-app>

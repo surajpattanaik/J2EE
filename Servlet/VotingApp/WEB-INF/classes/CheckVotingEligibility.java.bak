@@ -1,0 +1,30 @@
+package com.skp.servlet;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import java.io.*;
+
+public class CheckVotingEligibility extends HttpServlet{
+    @Override
+	public void doPost(HttpServletRequest req, HttpServletResponse res)throws ServletException,IOException{
+		res.setContentType("text/html");
+		PrintWriter pw = res.getWriter();
+		
+        String name =req.getParameter("name");
+		int age =Integer.parseInt(req.getParameter("age"));
+
+		pw.println("<h1 style='color:maroon;text-align:center'>Election Commission Of India </h1>");
+		if(age>=18)
+			pw.println("<h1 style='color:gold;text-align:center'>"+name+" is eligible for voting"+ "</h1>");
+
+		else
+			pw.println("<h1 style='color:gold;text-align:center'>"+name+" is not eligible for voting, wait for "+(18-age)+"year."+ "</h1>");
+
+        
+         pw.println("<a href='http://localhost:2020/VotingApp/index.html'><img src='images/home.png' width='60' height='50'</a>");
+
+		pw.close();
+
+
+
+	}
+}
